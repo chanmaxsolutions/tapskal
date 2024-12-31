@@ -1,3 +1,4 @@
+// app/layout.tsx
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Metadata } from 'next';
@@ -18,8 +19,14 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans bg-light text-dark`}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="https://res.cloudinary.com/dqeujzydw/image/upload/v1735628159/Tapskal-Favicon_s32ijx.svg" />
+      </head>
+      <body 
+        className={`${inter.variable} font-sans bg-light text-dark`}
+        suppressHydrationWarning
+      >
         <main className="min-h-screen">
           {children}
         </main>

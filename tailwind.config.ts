@@ -14,8 +14,7 @@ module.exports = {
         light: '#ffffff',
       },
       fontFamily: {
-        sans: ['SF Pro Display', 'system-ui', 'sans-serif'],
-        sfpro: ['SF Pro Display', 'system-ui', 'sans-serif'],
+        sans: ['General Sans', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

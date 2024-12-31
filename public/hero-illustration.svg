@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Elements -->
+  <circle cx="400" cy="400" r="300" fill="#4e20ab" opacity="0.1"/>
+  <circle cx="400" cy="400" r="250" fill="#ff5757" opacity="0.1"/>
+  
+  <!-- Abstract Shapes -->
+  <path d="M300,300 Q400,200 500,300 T700,300" stroke="#4e20ab" fill="none" stroke-width="4"/>
+  <path d="M100,400 Q200,300 300,400 T500,400" stroke="#ff5757" fill="none" stroke-width="4"/>
+  
+  <!-- Central Icon -->
+  <g transform="translate(300,300)">
+    <!-- Digital Marketing Icon -->
+    <rect x="0" y="0" width="200" height="200" rx="20" fill="#4e20ab" opacity="0.9"/>
+    <circle cx="100" cy="80" r="30" fill="#ffffff"/>
+    <path d="M70,120 L130,120 M70,140 L130,140 M70,160 L130,160" stroke="#ffffff" stroke-width="4"/>
+  </g>
+  
+  <!-- Floating Elements -->
+  <g transform="translate(200,200)">
+    <circle cx="0" cy="0" r="10" fill="#ff5757"/>
+    <circle cx="300" cy="100" r="15" fill="#4e20ab"/>
+    <circle cx="150" cy="300" r="12" fill="#ff5757"/>
+  </g>
+  
+  <!-- Connecting Lines -->
+  <path d="M200,200 L500,500" stroke="#4e20ab" stroke-width="2" opacity="0.3"/>
+  <path d="M300,200 L600,400" stroke="#ff5757" stroke-width="2" opacity="0.3"/>
+</svg>
