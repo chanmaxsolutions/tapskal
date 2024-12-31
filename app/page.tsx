@@ -6,6 +6,7 @@ import About from '@/components/About';
 import Testimonials from '@/components/Testimonials';
 import Process from '@/components/Process';
 import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials/>
       <Process/>
       <CTA/>
+      <Footer/>
       {/* Other page content will go here */}
       </main>
   );

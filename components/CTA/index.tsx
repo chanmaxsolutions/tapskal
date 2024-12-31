@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-secondary">
+    <section className="py-28 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <motion.div 
