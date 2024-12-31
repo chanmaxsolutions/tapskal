@@ -45,7 +45,7 @@ const Testimonials = () => {
   What they&apos;re saying
 </p>
               <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto">
-                Discover how we've helped businesses transform their digital presence and achieve remarkable success through our innovative solutions.
+                Discover how we&apos;ve helped businesses transform their digital presence and achieve remarkable success through our innovative solutions.
               </p>
             </div>
           </motion.div>
