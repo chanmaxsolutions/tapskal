@@ -52,35 +52,42 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            {/* Regular Nav Links including Home first */}
+            <Link
+              href="/"
+              className="text-dark hover:text-primary transition-colors duration-300 font-sfpro text-lg"
+            >
+              Home
+            </Link>
+
             {/* Services Dropdown */}
             <div
-              className="relative"
-              onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
+              className="relative group"
             >
               <button className="text-dark hover:text-primary transition-colors duration-300 font-sfpro text-lg flex items-center gap-1">
                 Services
                 <ChevronDown className="w-4 h-4" />
               </button>
 
+              {/* Invisible gap filler */}
+              <div className="absolute top-full left-0 w-full h-4"></div>
+
               {/* Dropdown Menu */}
-              {isServicesOpen && (
-                <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-xl py-2 mt-2">
-                  {services.map((service) => (
-                    <Link
-                      key={service.label}
-                      href={service.href}
-                      className="block px-4 py-3 text-dark hover:text-primary hover:bg-slate-50 transition-colors duration-300 font-sfpro"
-                    >
-                      {service.label}
-                    </Link>
-                  ))}
-                </div>
-              )}
+              <div className="absolute hidden group-hover:block top-[calc(100%+1rem)] left-0 w-64 bg-white shadow-lg rounded-xl py-2">
+                {services.map((service) => (
+                  <Link
+                    key={service.label}
+                    href={service.href}
+                    className="block px-4 py-3 text-dark hover:text-primary hover:bg-slate-50 transition-colors duration-300 font-sfpro"
+                  >
+                    {service.label}
+                  </Link>
+                ))}
+              </div>
             </div>
 
-            {/* Other Nav Links */}
-            {navLinks.map((link) => (
+            {/* Other Nav Links excluding Home */}
+            {navLinks.slice(1).map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
@@ -115,6 +122,15 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg animate-fade-in">
             <div className="container-custom py-4 flex flex-col space-y-4">
+              {/* Home link first */}
+              <Link
+                href="/"
+                className="text-dark hover:text-primary transition-colors duration-300 font-sfpro text-lg"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+
               {/* Mobile Services Dropdown */}
               <div className="space-y-3">
                 <button
@@ -143,8 +159,8 @@ const Navigation = () => {
                 )}
               </div>
 
-              {/* Other Nav Links */}
-              {navLinks.map((link) => (
+              {/* Other Nav Links excluding Home */}
+              {navLinks.slice(1).map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
