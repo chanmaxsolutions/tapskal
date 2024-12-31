@@ -1,6 +1,8 @@
 import { generalSans } from './fonts';
 import './globals.css';
 import { Metadata } from 'next';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Tapskal - Digital Marketing Agency',
@@ -18,15 +20,25 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="https://res.cloudinary.com/dqeujzydw/image/upload/v1735628159/Tapskal-Favicon_s32ijx.svg" />
+        <link 
+          rel="icon" 
+          href="https://res.cloudinary.com/dqeujzydw/image/upload/v1735628159/Tapskal-Favicon_s32ijx.svg" 
+        />
       </head>
       <body 
         className={`${generalSans.variable} font-sans bg-light text-dark`}
         suppressHydrationWarning
       >
+        {/* Header */}
+        <Navigation />
+        
+        {/* Page Content */}
         <main className="min-h-screen">
           {children}
         </main>
+        
+        {/* Footer */}
+        <Footer />
       </body>
     </html>
   );
