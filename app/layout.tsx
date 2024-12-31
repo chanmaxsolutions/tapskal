@@ -1,9 +1,6 @@
-// app/layout.tsx
-import { Inter } from 'next/font/google';
+import { generalSans } from './fonts';
 import './globals.css';
 import { Metadata } from 'next';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'Tapskal - Digital Marketing Agency',
@@ -24,7 +21,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="icon" href="https://res.cloudinary.com/dqeujzydw/image/upload/v1735628159/Tapskal-Favicon_s32ijx.svg" />
       </head>
       <body 
-        className={`${inter.variable} font-sans bg-light text-dark`}
+        className={`${generalSans.variable} font-sans bg-light text-dark`}
         suppressHydrationWarning
       >
         <main className="min-h-screen">

@@ -14,7 +14,7 @@ module.exports = {
         light: '#ffffff',
       },
       fontFamily: {
-        sans: ['General Sans', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-general-sans)', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
