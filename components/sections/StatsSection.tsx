@@ -5,10 +5,10 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const stats = [
-  { number: '500+', label: 'Projects Completed' },
+  { number: '50+', label: 'Projects Completed' },
   { number: '95%', label: 'Client Satisfaction' },
-  { number: '10+', label: 'Years Experience' },
-  { number: '250+', label: 'Active Clients' }
+  { number: '2+', label: 'Years Experience' },
+  { number: '15+', label: 'Active Clients' }
 ];
 
 const AnimatedCounter = ({ value }: { value: string }) => {
@@ -53,7 +53,7 @@ const Stats = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center text-white"
             >
-              <div className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-2">
+              <div className="text-5xl md:text-6xl lg:text-7xl font-semibold mb-2">
                 <AnimatedCounter value={stat.number} />
               </div>
               <p className="text-lg md:text-xl opacity-80 font-light">{stat.label}</p>
