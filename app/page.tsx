@@ -20,7 +20,7 @@ export default function Home() {
       <Process/>
       <CTA/>
       <Footer/>
-      {/* Other page content will go here */}
+      {/* Other page content will go heree */}
       </main>
   );
 }
