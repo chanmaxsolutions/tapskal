@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.1 }}
           className="text-center max-w-5xl mx-auto"
         >
-          <h1 className="text-6xl md:text-7xl lg:text-9xl max-w-4xl font-semibold mb-8 ">
+          <h1 className="text-6xl md:text-7xl lg:text-9xl max-w-4xl font-semibold mb-8 tracking-tighter">
             <span className="text-primary">Marketing </span>
             <span className="text-secondary">
               Agency

@@ -28,19 +28,19 @@ body {
   }
   
   .heading-1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-sans;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-sans tracking-tighter;
   }
   
   .heading-2 {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-sans;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-sans tracking-tighter;
   }
   
   .heading-3 {
-    @apply text-2xl md:text-3xl lg:text-4xl font-semibold font-sans;
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold font-sans tracking-tighter;
   }
   
   .paragraph {
-    @apply text-base md:text-lg leading-relaxed font-sans;
+    @apply text-base md:text-lg leading-relaxed font-sans ;
   }
   
   .button-primary {
