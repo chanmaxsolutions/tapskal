@@ -7,11 +7,11 @@ import { motion } from 'framer-motion';
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-      
+
 
       {/* Content Container */}
       <div className="container mx-auto px-4 relative z-10 flex items-center justify-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.1 }}
@@ -23,14 +23,14 @@ const Hero: React.FC = () => {
               Agency
             </span>
           </h1>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.0, duration: 0.1 }}
-            className="text-2xl md:text-2xl lg:text-3xl text-gray-600 font-light mb-12 max-w-4xl mx-auto "
+            className="text-2xl md:text-2xl lg:text-3xl text-gray-600 font-light mb-12 max-w-4xl mx-auto tracking-tight"
           >
-            Elevate your brand with cutting-edge digital marketing strategies. 
+            Elevate your brand with cutting-edge digital marketing strategies.
             We turn your vision into{' '}
             <span className="relative inline-block">
               measurable success
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             </span>.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.1 }}

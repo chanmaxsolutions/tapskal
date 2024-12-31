@@ -3,11 +3,12 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,18 +18,23 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const services = [
+    { href: '/services/web-development', label: 'Web Development' },
+    { href: '/services/performance-marketing', label: 'Performance Marketing' },
+    { href: '/services/seo', label: 'Search Engine Optimization' },
+    { href: '/services/ai-development', label: 'AI Development' },
+  ];
+
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/services', label: 'Services' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
   ];
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
-      }`}
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        }`}
     >
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
@@ -46,6 +52,34 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            {/* Services Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <button className="text-dark hover:text-primary transition-colors duration-300 font-sfpro text-lg flex items-center gap-1">
+                Services
+                <ChevronDown className="w-4 h-4" />
+              </button>
+
+              {/* Dropdown Menu */}
+              {isServicesOpen && (
+                <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-xl py-2 mt-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.label}
+                      href={service.href}
+                      className="block px-4 py-3 text-dark hover:text-primary hover:bg-slate-50 transition-colors duration-300 font-sfpro"
+                    >
+                      {service.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Other Nav Links */}
             {navLinks.map((link) => (
               <Link
                 key={link.label}
@@ -81,6 +115,35 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg animate-fade-in">
             <div className="container-custom py-4 flex flex-col space-y-4">
+              {/* Mobile Services Dropdown */}
+              <div className="space-y-3">
+                <button
+                  className="text-dark font-sfpro text-lg flex items-center gap-1"
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                >
+                  Services
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {isServicesOpen && (
+                  <div className="pl-4 space-y-3">
+                    {services.map((service) => (
+                      <Link
+                        key={service.label}
+                        href={service.href}
+                        className="block text-dark hover:text-primary transition-colors duration-300 font-sfpro text-lg"
+                        onClick={() => {
+                          setIsOpen(false);
+                          setIsServicesOpen(false);
+                        }}
+                      >
+                        {service.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Other Nav Links */}
               {navLinks.map((link) => (
                 <Link
                   key={link.label}
