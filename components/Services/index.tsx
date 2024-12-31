@@ -49,14 +49,14 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-20 space-y-6" // Increased bottom margin
+            className="text-center mb-20 " // Increased bottom margin
           >
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-secondary tracking-tighter">
               Our Services
             </h2>
             <div className="space-y-6"> {/* Increased spacing */}
               <p className="text-3xl text-gray-600 font-light tracking-tight">
-                Comprehensive digital solutions
+                Digital solutions
               </p>
               <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto">
                 We craft digital experiences that transform businesses and drive success in the modern digital landscape. Our expertise spans across web development, digital marketing, and AI integration, ensuring your business stays ahead of the curve.

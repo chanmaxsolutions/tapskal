@@ -10,7 +10,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           {/* Main Content Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
             {/* Left Column - Big Impact Text */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
@@ -19,7 +19,7 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="space-y-8"
             >
-              <h2 className="text-7xl md:text-8xl lg:text-9xl font-semibold text-white/10 tracking-tighter">
+              <h2 className="text-7xl md:text-8xl lg:text-9xl font-semibold text-white/15 tracking-tighter">
                 About
               </h2>
               <p className="text-4xl md:text-5xl font-semibold text-white tracking-tighter">
@@ -33,7 +33,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="space-y-12 pt-8"
+              className="space-y-12 md:pt-8"
             >
               <div className="space-y-6">
                 <p className="text-xl text-white/80 font-light">
