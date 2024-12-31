@@ -22,8 +22,8 @@ const CTA = () => {
               Ready to Transform Your Digital Presence?
             </h2>
             <p className="text-xl md:text-2xl text-white/80 font-light max-w-3xl mx-auto">
-              Get in touch with us today and let's discuss how we can help your business grow in the digital landscape.
-            </p>
+  Get in touch with us today and let&apos;s discuss how we can help your business grow in the digital landscape.
+</p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

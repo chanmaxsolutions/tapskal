@@ -41,9 +41,9 @@ const Testimonials = () => {
               Client Stories
             </h2>
             <div className="space-y-6">
-              <p className="text-3xl text-gray-600 font-light tracking-tight">
-                What they say
-              </p>
+            <p className="text-3xl text-gray-600 font-light tracking-tight">
+  What they&apos;re saying
+</p>
               <p className="text-xl text-gray-600 font-light max-w-3xl mx-auto">
                 Discover how we've helped businesses transform their digital presence and achieve remarkable success through our innovative solutions.
               </p>
@@ -64,8 +64,8 @@ const Testimonials = () => {
                 className={`text-center max-w-4xl mx-auto ${activeIndex === index ? 'block' : 'hidden'}`}
               >
                 <p className="text-3xl md:text-4xl lg:text-5xl text-primary font-light mb-12 tracking-tighter">
-                  "{testimonial.quote}"
-                </p>
+  &ldquo;{testimonial.quote}&rdquo;
+</p>
                 <div className="space-y-3">
                   <p className="text-2xl font-semibold text-secondary">{testimonial.author}</p>
                   <p className="text-xl text-gray-600 font-light">{testimonial.position}</p>

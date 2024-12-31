@@ -48,8 +48,8 @@ const GetQuote = () => {
                 Get a Free Quote
               </h1>
               <p className="text-xl text-gray-600 font-light">
-                Fill out the form below and we'll get back to you within 24 hours.
-              </p>
+  Fill out the form below and we&apos;ll get back to you within 24 hours.
+</p>
             </div>
 
             <form className="space-y-8">
