@@ -22,7 +22,7 @@ const Navigation = () => {
     { href: '/services/web-development', label: 'Web Development' },
     { href: '/services/performance-marketing', label: 'Performance Marketing' },
     { href: '/services/seo', label: 'Search Engine Optimization' },
-    { href: '/services/ai-development', label: 'AI Development' },
+    { href: '/services/ai-development', label: 'AI Agent Development' },
   ];
 
   const navLinks = [
