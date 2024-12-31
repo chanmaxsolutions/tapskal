@@ -1,9 +1,8 @@
 // components/Stats/index.tsx
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
 
 const stats = [
   { number: '500+', label: 'Projects Completed' },
@@ -12,7 +11,7 @@ const stats = [
   { number: '250+', label: 'Active Clients' }
 ];
 
-const AnimatedCounter = ({ value, duration = 2 }: { value: string; duration?: number }) => {
+const AnimatedCounter = ({ value }: { value: string }) => {
   const numberValue = parseInt(value.replace(/\D/g, ''));
   const hasPlus = value.includes('+');
   const hasPercent = value.includes('%');
@@ -40,7 +39,6 @@ const AnimatedCounter = ({ value, duration = 2 }: { value: string; duration?: nu
 
 const Stats = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   return (
     <section className="bg-primary py-20" ref={ref}>
