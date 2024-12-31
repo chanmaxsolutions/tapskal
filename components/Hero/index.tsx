@@ -18,9 +18,9 @@ const Hero: React.FC = () => {
           className="text-center max-w-5xl mx-auto"
         >
           <h1 className="text-6xl md:text-7xl lg:text-9xl max-w-4xl font-semibold mb-8 ">
-            <span className="text-primary">Digital </span>
+            <span className="text-primary">Marketing </span>
             <span className="text-secondary">
-              Dynasty
+              Agency
             </span>
           </h1>
           
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.0, duration: 0.1 }}
-            className="text-2xl md:text-2xl lg:text-3xl text-gray-400 font-light mb-12 max-w-4xl mx-auto "
+            className="text-2xl md:text-2xl lg:text-3xl text-gray-600 font-light mb-12 max-w-4xl mx-auto "
           >
             Elevate your brand with cutting-edge digital marketing strategies. 
             We turn your vision into{' '}
