@@ -8,41 +8,41 @@ import { Linkedin, Twitter } from 'lucide-react';
 
 const teamMembers = [
     {
-        name: 'John Smith',
-        role: 'Founder & CEO',
-        image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', // Using placeholder for now
+        name: 'Prashan Chandrapalan',
+        role: 'Co-Founder',
+        image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735757212/Green_Modern_Social_Media_Agency_Marketing_Instagram_Post_1_ova7cj.jpg', // Using placeholder for now
+        social: {
+            linkedin: 'https://www.linkedin.com/in/prashanchandrapalan/',
+            twitter: 'https://x.com/prashanchan'
+        }
+    },
+    {
+        name: 'Tamilnilavan Sathiyavelan',
+        role: 'Co-Founder',
+        image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735757211/Green_Modern_Social_Media_Agency_Marketing_Instagram_Post_eqfxui.jpg',
         social: {
             linkedin: '#',
             twitter: '#'
         }
     },
-    {
-        name: 'Sarah Johnson',
-        role: 'Tech Lead',
-        image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        social: {
-            linkedin: '#',
-            twitter: '#'
-        }
-    },
-    {
-        name: 'Mike Wilson',
-        role: 'Marketing Director',
-        image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        social: {
-            linkedin: '#',
-            twitter: '#'
-        }
-    },
-    {
-        name: 'Emily Brown',
-        role: 'Design Lead',
-        image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        social: {
-            linkedin: '#',
-            twitter: '#'
-        }
-    }
+    // {
+    //     name: 'Mike Wilson',
+    //     role: 'Marketing Director',
+    //     image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    //     social: {
+    //         linkedin: '#',
+    //         twitter: '#'
+    //     }
+    // },
+    // {
+    //     name: 'Emily Brown',
+    //     role: 'Design Lead',
+    //     image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    //     social: {
+    //         linkedin: '#',
+    //         twitter: '#'
+    //     }
+    // }
 ];
 
 const Team = () => {
@@ -104,7 +104,7 @@ const Team = () => {
                                 </div>
 
                                 {/* Member Info */}
-                                <h3 className="text-2xl font-semibold text-primary mb-2">
+                                <h3 className="text-2xl font-semibold text-primary mb-2 tracking-tighter leading-none">
                                     {member.name}
                                 </h3>
                                 <p className="text-lg text-gray-600 font-light">
