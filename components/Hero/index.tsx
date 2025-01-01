@@ -1,14 +1,12 @@
-// components/Hero/index.tsx
 'use client';
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
-
-
       {/* Content Container */}
       <div className="container mx-auto px-4 relative z-10 flex items-center justify-center">
         <motion.div
@@ -44,12 +42,15 @@ const Hero: React.FC = () => {
             transition={{ delay: 0.1, duration: 0.1 }}
             className="flex flex-wrap gap-6 justify-center"
           >
-            <button className="button-primary text-xl px-12 py-4">
+            <Link href="/get-quote" className="button-primary text-xl px-12 py-4">
               Get Started
-            </button>
-            <button className="px-12 py-4 border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-sans text-xl">
+            </Link>
+            <Link
+              href="/contact"
+              className="px-12 py-4 border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300 font-sans text-xl"
+            >
               Learn More
-            </button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

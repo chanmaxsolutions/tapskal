@@ -4,10 +4,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { 
-  Globe2, 
-  BarChart3, 
-  Search, 
+import {
+  Globe2,
+  BarChart3,
+  Search,
   BrainCircuit
 } from 'lucide-react';
 
@@ -44,7 +44,7 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto"> {/* Increased to 70% width */}
           {/* Title Section */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

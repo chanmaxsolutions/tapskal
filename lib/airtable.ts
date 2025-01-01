@@ -49,7 +49,7 @@ class AirtableClient {
         this.apiKey = apiKey;
     }
 
-    private async makeRequest(table: string, data: any) {
+    private async makeRequest(table: string, data: Record<string, unknown>) {
         const url = `${this.baseUrl}/${this.baseId}/${table}`;
 
         // Debug logging

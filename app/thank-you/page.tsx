@@ -7,8 +7,8 @@ import { ArrowLeft, CheckCircle, Clock, Mail, ArrowRight } from 'lucide-react';
 
 const ThankYou = () => {
     return (
-        <div className="min-h-screen bg-white py-20">
-            <div className="container mx-auto px-4">
+        <div className="min-h-screen bg-white flex items-center">
+            <div className="container mx-auto px-4 py-20">
                 <div className="max-w-3xl mx-auto">
                     {/* Back Button */}
                     <Link
@@ -90,13 +90,13 @@ const ThankYou = () => {
                             transition={{ delay: 0.8 }}
                             className="pt-8"
                         >
-                            <Link
+                            {/* <Link
                                 href="/blog"
                                 className="inline-flex items-center gap-2 text-primary hover:opacity-80 transition-all duration-300"
                             >
                                 Explore Our Blog
                                 <ArrowRight className="w-5 h-5" />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     </motion.div>
                 </div>

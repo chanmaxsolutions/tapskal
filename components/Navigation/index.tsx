@@ -97,7 +97,7 @@ const Navigation = () => {
               </Link>
             ))}
             <Link
-              href="/get-started"
+              href="/get-quote"
               className="button-primary text-lg px-8 py-3"
             >
               Get Started
@@ -171,7 +171,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <Link
-                href="/get-started"
+                href="/get-quote"
                 className="button-primary text-lg text-center px-8 py-3"
                 onClick={() => setIsOpen(false)}
               >

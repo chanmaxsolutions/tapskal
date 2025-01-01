@@ -1,6 +1,12 @@
 // app/api/submit-form/route.ts
 import { NextResponse } from 'next/server';
 import { airtableClient, ContactFormSchema, QuoteFormSchema } from '@/lib/airtable';
+import { ZodError } from 'zod';
+
+interface ErrorResponse {
+    message: string;
+    [key: string]: unknown;
+}
 
 export async function POST(request: Request) {
     try {
@@ -19,15 +25,18 @@ export async function POST(request: Request) {
         }
 
         return NextResponse.json({ success: true });
-    } catch (error: any) {
+    } catch (error) {
         console.error('Form submission error:', error);
 
-        return NextResponse.json(
-            {
-                success: false,
-                error: error.message || 'Something went wrong'
-            },
-            { status: 400 }
-        );
+        const errorResponse: ErrorResponse = {
+            success: false,
+            message: error instanceof Error ? error.message : 'Something went wrong'
+        };
+
+        if (error instanceof ZodError) {
+            errorResponse.errors = error.errors;
+        }
+
+        return NextResponse.json(errorResponse, { status: 400 });
     }
 }

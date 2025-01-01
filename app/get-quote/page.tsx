@@ -45,7 +45,7 @@ const GetQuote = () => {
   });
 
   // Watch the services array for validation feedback
-  const selectedServices = watch('services');
+
 
   const onSubmit = async (data: QuoteFormData) => {
     try {
@@ -79,7 +79,7 @@ const GetQuote = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white py-20">
+    <div className="min-h-screen bg-white py-40">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Back Button */}
