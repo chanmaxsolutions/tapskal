@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, CheckCircle, Clock, Mail, ArrowRight } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Clock, Mail } from 'lucide-react';
 
 const ThankYou = () => {
     return (
