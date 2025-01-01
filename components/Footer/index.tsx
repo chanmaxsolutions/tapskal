@@ -74,11 +74,11 @@ const Footer = () => {
                 </a>
                 <a href="tel:+1234567890" className="flex items-center space-x-3 text-white/80 hover:text-white transition-colors">
                   <Phone className="w-5 h-5" />
-                  <span>+1 234 567 890</span>
+                  <span>+91 99 6263 2083</span>
                 </a>
                 <div className="flex items-center space-x-3 text-white/80">
                   <MapPin className="w-5 h-5 flex-shrink-0" />
-                  <span>123 Business Street, Tech City, TC 12345</span>
+                  <span>31 Vigrarajan Nagar, Avadi, Chennai, 602024</span>
                 </div>
               </div>
             </div>

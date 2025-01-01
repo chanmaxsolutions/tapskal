@@ -21,8 +21,8 @@ const teamMembers = [
         role: 'Co-Founder',
         image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735757211/Green_Modern_Social_Media_Agency_Marketing_Instagram_Post_eqfxui.jpg',
         social: {
-            linkedin: '#',
-            twitter: '#'
+            linkedin: 'https://www.linkedin.com/in/tamil-nilavan-6204302a8/',
+            twitter: 'https://x.com/'
         }
     },
     // {
@@ -94,10 +94,10 @@ const Team = () => {
                                     </div>
                                     {/* Social Links Overlay */}
                                     <div className="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                                        <a href={member.social.linkedin} className="text-white hover:text-secondary transition-colors">
+                                        <a href={member.social.linkedin} target='_blank' className="text-white hover:text-secondary transition-colors">
                                             <Linkedin className="w-6 h-6" />
                                         </a>
-                                        <a href={member.social.twitter} className="text-white hover:text-secondary transition-colors">
+                                        <a href={member.social.twitter} target='_blank' className="text-white hover:text-secondary transition-colors">
                                             <Twitter className="w-6 h-6" />
                                         </a>
                                     </div>
