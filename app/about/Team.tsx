@@ -8,7 +8,7 @@ import { Linkedin, Twitter } from 'lucide-react';
 
 const teamMembers = [
     {
-        name: 'Prashan Chandrapalan',
+        name: 'Prashan C',
         role: 'Co-Founder',
         image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735757212/Green_Modern_Social_Media_Agency_Marketing_Instagram_Post_1_ova7cj.jpg', // Using placeholder for now
         social: {
@@ -17,7 +17,7 @@ const teamMembers = [
         }
     },
     {
-        name: 'Tamilnilavan Sathiyavelan',
+        name: 'Tamilnilavan S',
         role: 'Co-Founder',
         image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735757211/Green_Modern_Social_Media_Agency_Marketing_Instagram_Post_eqfxui.jpg',
         social: {
@@ -25,24 +25,42 @@ const teamMembers = [
             twitter: 'https://x.com/'
         }
     },
-    // {
-    //     name: 'Mike Wilson',
-    //     role: 'Marketing Director',
-    //     image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    //     social: {
-    //         linkedin: '#',
-    //         twitter: '#'
-    //     }
-    // },
-    // {
-    //     name: 'Emily Brown',
-    //     role: 'Design Lead',
-    //     image: 'https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    //     social: {
-    //         linkedin: '#',
-    //         twitter: '#'
-    //     }
-    // }
+    {
+        name: 'Sakthilaya B',
+        role: 'Data Scientist',
+        image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735840608/8_a2cfzx.jpg',
+        social: {
+            linkedin: 'https://www.linkedin.com/in/sakthilaya19/',
+            twitter: 'https://x.com/'
+        }
+    },
+    {
+        name: 'Shobana shri J',
+        role: 'Operational Lead',
+        image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735840604/5_f6ssks.jpg',
+        social: {
+            linkedin: 'https://www.linkedin.com/in/shobanashrij16/',
+            twitter: 'https://x.com/'
+        }
+    },
+    {
+        name: 'Padmasri B',
+        role: 'Technical Lead',
+        image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735840604/6_ctqxll.jpg',
+        social: {
+            linkedin: 'https://www.linkedin.com/in/padmasrib11/',
+            twitter: 'https://x.com/'
+        }
+    },
+    {
+        name: 'Karthik T',
+        role: 'Marketing Lead',
+        image: 'https://res.cloudinary.com/dqeujzydw/image/upload/v1735840604/7_ks8sua.jpg',
+        social: {
+            linkedin: 'https://www.linkedin.com/in/karthikt20/',
+            twitter: 'https://x.com/'
+        }
+    }
 ];
 
 const Team = () => {
