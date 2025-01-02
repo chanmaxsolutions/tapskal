@@ -98,8 +98,8 @@ const ContactSection = () => {
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 mb-2">Visit Us</h3>
                             <p className="text-lg text-gray-600 font-light">
-                                123 Business Street<br />
-                                City, State 12345
+                                31 Vigrarajan Nagar, <br />
+                                Avadi, Chennai, 602024
                             </p>
                         </div>
                     </motion.div>
